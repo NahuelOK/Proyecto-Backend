@@ -11,6 +11,6 @@ app.set("view engine", "handlebars");
 
 app.get("/", (req, res) => res.render("index", {}))
 app.get("/inicio", (req, res) => res.send("OK"))
-app.get("/productos", productosRouter)
+app.use("/productos", productosRouter)
 
 app.listen(8080, ()=> console.log("Corriendo...."))

@@ -12,7 +12,7 @@ router.get("/create", async (req, res) => {
 
 router.get("/:name", async (req, res) => {
     res.render("one", {producto: {
-        name:"coca", price: 2000, stock: 23, desc: "blablabla", img:""
+        name:"pritty", price: 2000, stock: 23, desc: "blablabla", img:" "
     }})
 })
 
